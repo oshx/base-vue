@@ -1,17 +1,19 @@
 <template>
-  <vContainer>
-    <vLayout>test</vLayout>
-  </vContainer>
+    <LayoutFrame>
+        시험시험!!
+    </LayoutFrame>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script lang="ts">
+    import LayoutFrame from '@/components/LayoutFrame.vue';
+    import {Component, Vue} from 'vue-property-decorator';
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+    @Component<Main>({
+        components: {
+            LayoutFrame,
+        },
+    })
+    export default class Main extends Vue {
+
+    }
 </script>
