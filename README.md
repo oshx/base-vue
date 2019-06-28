@@ -1,5 +1,8 @@
 # base-vue
 
+## Vuetify Manual
+[https://vuetifyjs.com/ko/](https://vuetifyjs.com/ko/)
+
 ## Project setup
 ```
 yarn install

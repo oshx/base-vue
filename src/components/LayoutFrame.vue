@@ -1,9 +1,9 @@
 <template>
-    <vLayout>
+    <v-container fluid>
         <slot name="layoutHeader"></slot>
         <slot></slot>
         <slot name="layoutFooter"></slot>
-    </vLayout>
+    </v-container>
 </template>
 
 <script lang="ts">
