@@ -1,8 +1,11 @@
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
 
-  export default class LayoutHeader extends Vue {
+  @Component
+  class LayoutHeader extends Vue {
   }
+
+  export default LayoutHeader;
 </script>
 
 <template>
