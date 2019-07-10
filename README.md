@@ -1,4 +1,4 @@
-# VUE + Vuetify Admin 기반틀
+# VUE + Vuetify 관리자도구 틀
 
 ## 준비사항
 ```
@@ -8,6 +8,27 @@ yarn
 
 ### 사용 의도
 반복되는 관리자도구 생성 기반을 위한 추가 설정된 상태
+
+### 주요 의존성 설정
+- 언어
+    - Javascript, ECMA-Next
+    - TypeScript
+- Client
+    - Vue.js
+        - Vue-router
+        - Vuex
+        - Vuetify
+- Server
+    - Koa.js
+- Universal
+    - Axios
+- 주요 생산성 향상 도구
+    - eslint
+    - tslint
+    - prettier
+- 추천 개발환경
+    - WebStorm
+    - Visual Studio Code
 
 ## 문서 바로가기
 [Vue.js 사용자 문서 바로가기](https://vuejs.org/)
