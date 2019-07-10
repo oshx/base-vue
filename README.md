@@ -1,42 +1,60 @@
-# base-vue
+# VUE + Vuetify Admin 기반틀
 
-## Vuetify Manual
-[https://vuetifyjs.com/ko/](https://vuetifyjs.com/ko/)
+## 준비사항
+```
+node.js
+yarn
+```
 
-## Project setup
+### 사용 의도
+반복되는 관리자도구 생성 기반을 위한 추가 설정된 상태
+
+## 문서 바로가기
+[Vue.js 사용자 문서 바로가기](https://vuejs.org/)
+[Vue CLI 설정 문서 바로가기](https://cli.vuejs.org/config/)
+[Vuetify 사용자 문서 바로가기](https://vuetifyjs.com/)
+
+## Project 의존성 설치
+```
+yarn
+```
+또는
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 개발 환경
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
+yarn serve
 ```
 
-### Run your tests
+### Production 환경
+#### Source Build
 ```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
+yarn build
 ```
 
-### Run your end-to-end tests
+#### Server 시작 (구현 예정)
+```
+yarn start
+```
+
+### Test 수행
+```
+yarn test
+```
+
+#### End-to-End test 수행
 ```
 yarn run test:e2e
 ```
 
-### Run your unit tests
+### 단위 test 수행
 ```
 yarn run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 교정
+```
+yarn lint
+```
