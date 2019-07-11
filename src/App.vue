@@ -27,8 +27,3 @@
 
   export default App;
 </script>
-
-<style lang="stylus">
-  *
-    font-family: Noto Sans KR, sans-serif
-</style>
