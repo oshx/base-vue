@@ -1,31 +1,34 @@
-<script lang="ts">
-import {Component, Vue} from "vue-property-decorator";
-
-@Component<App>({
-  // life cycle hooks
-})
-class App extends Vue {
-  private isDrawerRight: boolean = false;
-
-  protected get drawerRight(): boolean {
-    return this.isDrawerRight;
-  }
-
-  protected set drawerRight(value: boolean) {
-    this.isDrawerRight = value;
-  }
-}
-
-export default App;
-</script>
-
 <template>
   <v-app light>
-    <v-navigation-drawer fixed v-model="drawerRight" right clipped app></v-navigation-drawer>
-    <v-toolbar app></v-toolbar>
+    <LayoutHeader></LayoutHeader>
+    <LayoutMainMenu></LayoutMainMenu>
     <v-content>
       <router-view/>
     </v-content>
-    <v-footer app></v-footer>
+    <LayoutFooter></LayoutFooter>
   </v-app>
 </template>
+
+<script lang="ts">
+  import {Component, Vue} from "vue-property-decorator";
+  import LayoutHeader from "@/components/layouts/LayoutHeader.vue";
+  import LayoutFooter from "@/components/layouts/LayoutFooter.vue";
+  import LayoutMainMenu from "@/components/layouts/LayoutMainMenu.vue";
+
+  @Component<App>({
+    components: {
+      LayoutHeader,
+      LayoutMainMenu,
+      LayoutFooter,
+    },
+  })
+  class App extends Vue {
+  }
+
+  export default App;
+</script>
+
+<style lang="stylus">
+  *
+    font-family: Noto Sans KR, sans-serif
+</style>

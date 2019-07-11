@@ -1,4 +1,5 @@
-import Vue from "vue";
+import "babel-polyfill";
+import Vue, {CreateElement, VNode} from "vue";
 import router from "@/router";
 import store from "@/store";
 import App from "@/App.vue";
@@ -8,7 +9,8 @@ import "@/registerServiceWorker";
 Vue.config.productionTip = false;
 
 new Vue({
-    router,
-    store,
-    render: (h) => h(App),
-}).$mount("#app");
+  el: "#app",
+  render: (h: CreateElement): VNode => h(App),
+  router,
+  store,
+});
