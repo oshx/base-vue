@@ -1,5 +1,5 @@
 <template>
-  <v-footer
+  <VFooter
     app
     dark
     class="pa-3"
@@ -7,7 +7,7 @@
     <address>
       &copy; {{copyRightMessage}}
     </address>
-  </v-footer>
+  </VFooter>
 </template>
 
 <script lang="ts">

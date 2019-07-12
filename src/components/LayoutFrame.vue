@@ -1,3 +1,9 @@
+<template>
+  <VContainer fluid>
+    <slot></slot>
+  </VContainer>
+</template>
+
 <script lang="ts">
   import {Component, Vue} from "vue-property-decorator";
 
@@ -8,11 +14,3 @@
 
   export default LayoutFrame;
 </script>
-
-<template>
-  <v-container fluid>
-    <v-flex>
-      <slot></slot>
-    </v-flex>
-  </v-container>
-</template>

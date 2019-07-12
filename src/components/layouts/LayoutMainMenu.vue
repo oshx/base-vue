@@ -1,73 +1,73 @@
 <template>
-  <v-navigation-drawer
+  <VNavigationDrawer
     app
     fixed
     clipped
     v-model="drawer"
   >
-    <v-list>
-      <v-list-tile>
-        <v-list-tile-action>
-          <v-icon>home</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-title>Home</v-list-tile-title>
-      </v-list-tile>
+    <VList>
+      <VListTile>
+        <VListTileAction>
+          <VIcon>home</VIcon>
+        </VListTileAction>
+        <VListTileTitle>Home</VListTileTitle>
+      </VListTile>
 
-      <v-list-group
+      <VListGroup
         prepend-icon="account_circle"
         value="true"
       >
         <template v-slot:activator>
-          <v-list-tile>
-            <v-list-tile-title>Users</v-list-tile-title>
-          </v-list-tile>
+          <VListTile>
+            <VListTileTitle>Users</VListTileTitle>
+          </VListTile>
         </template>
-        <v-list-group
+        <VListGroup
           no-action
           sub-group
           value="true"
         >
           <template v-slot:activator>
-            <v-list-tile>
-              <v-list-tile-title>Admin</v-list-tile-title>
-            </v-list-tile>
+            <VListTile>
+              <VListTileTitle>Admin</VListTileTitle>
+            </VListTile>
           </template>
 
-          <v-list-tile
+          <VListTile
             v-for="(admin, i) in admins"
             :key="i"
             @click=""
           >
-            <v-list-tile-title v-text="admin[0]"></v-list-tile-title>
-            <v-list-tile-action>
-              <v-icon v-text="admin[1]"></v-icon>
-            </v-list-tile-action>
-          </v-list-tile>
-        </v-list-group>
+            <VListTileTitle v-text="admin[0]"></VListTileTitle>
+            <VListTileAction>
+              <VIcon v-text="admin[1]"></VIcon>
+            </VListTileAction>
+          </VListTile>
+        </VListGroup>
 
-        <v-list-group
+        <VListGroup
           sub-group
           no-action
         >
           <template v-slot:activator>
-            <v-list-tile>
-              <v-list-tile-title>Actions</v-list-tile-title>
-            </v-list-tile>
+            <VListTile>
+              <VListTileTitle>Actions</VListTileTitle>
+            </VListTile>
           </template>
-          <v-list-tile
+          <VListTile
             v-for="(crud, i) in cruds"
             :key="i"
             @click=""
           >
-            <v-list-tile-title v-text="crud[0]"></v-list-tile-title>
-            <v-list-tile-action>
-              <v-icon v-text="crud[1]"></v-icon>
-            </v-list-tile-action>
-          </v-list-tile>
-        </v-list-group>
-      </v-list-group>
-    </v-list>
-  </v-navigation-drawer>
+            <VListTileTitle v-text="crud[0]"></VListTileTitle>
+            <VListTileAction>
+              <VIcon v-text="crud[1]"></VIcon>
+            </VListTileAction>
+          </VListTile>
+        </VListGroup>
+      </VListGroup>
+    </VList>
+  </VNavigationDrawer>
 </template>
 
 <script lang="ts">

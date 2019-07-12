@@ -1,38 +1,37 @@
 <template>
-  <v-toolbar
+  <VToolbar
     dense
     fixed
     dark
     clipped-left
     app
   >
-    <v-toolbar-side-icon
+    <VToolbarSideIcon
+      class="hidden-lg-and-up"
       @click="handleMainMenuToggle"
-    ></v-toolbar-side-icon>
-    <v-toolbar-title>
-      <v-btn
-        @click="goToHome"
-        flat
-        class="text--accent-4"
-      ><strong>{{webSiteTitle}}</strong>
-      </v-btn>
-    </v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn
+    ></VToolbarSideIcon>
+    <VToolbarTitle
+      tabindex="0"
+      class="title-link"
+      @click="goToHome"
+    ><strong>{{webSiteTitle}}</strong>
+    </VToolbarTitle>
+    <VSpacer></VSpacer>
+    <VToolbarItems class="hidden-sm-and-down">
+      <VBtn
         flat
       >Link One
-      </v-btn>
-      <v-btn
+      </VBtn>
+      <VBtn
         flat
       >Link Two
-      </v-btn>
-      <v-btn
+      </VBtn>
+      <VBtn
         flat
       >Link Three
-      </v-btn>
-    </v-toolbar-items>
-  </v-toolbar>
+      </VBtn>
+    </VToolbarItems>
+  </VToolbar>
 </template>
 
 <script lang="ts">
@@ -56,3 +55,10 @@
 
   export default LayoutHeader;
 </script>
+
+<style lang="stylus"
+       scoped>
+  .title-link
+    &, *
+      cursor pointer
+</style>

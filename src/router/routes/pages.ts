@@ -1,15 +1,15 @@
 import {RouteConfig} from "vue-router";
-import Home from "@/views/Main.vue";
+import Overview from "@/views/Overview.vue";
 
 export enum RouteName {
-    HOME = "첫 화면",
+    OVERVIEW = "개요",
     ABOUT = "정보 화면",
 }
 
-export const routeHome: RouteConfig = {
+export const routeOverview: RouteConfig = {
     path: "/",
-    name: RouteName.HOME,
-    component: Home,
+    name: RouteName.OVERVIEW,
+    component: Overview,
 };
 
 export const routeAbout: RouteConfig = {
@@ -19,6 +19,6 @@ export const routeAbout: RouteConfig = {
 };
 
 export const routeList: RouteConfig[] = [
-    routeHome,
+    routeOverview,
     routeAbout,
 ];
