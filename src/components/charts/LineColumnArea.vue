@@ -38,11 +38,6 @@ class LineColumnArea extends Vue {
         id: "vue-apexchart-odi-sameple",
         width: "100%",
       },
-      // fill: {
-      //   colors: [
-      //     "#369",
-      //   ],
-      // },
       xaxis: {
         categories,
       },

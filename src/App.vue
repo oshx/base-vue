@@ -1,12 +1,14 @@
 <template>
-  <v-app light>
+  <VApp
+    light
+    >
     <LayoutHeader></LayoutHeader>
     <LayoutMainMenu></LayoutMainMenu>
-    <v-content>
-      <router-view/>
-    </v-content>
+    <VContent>
+      <RouterView/>
+    </VContent>
     <LayoutFooter></LayoutFooter>
-  </v-app>
+  </VApp>
 </template>
 
 <script lang="ts">
