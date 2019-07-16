@@ -3,7 +3,7 @@
 ## 준비사항
 ```
 node.js
-yarn
+npm
 ```
 
 ### 사용 의도
@@ -37,45 +37,45 @@ yarn
 
 ## Project 의존성 설치
 ```
-yarn
+npm i
 ```
 또는
 ```
-yarn install
+npm install
 ```
 
 ### 개발 환경
 ```
-yarn serve
+npm run serve
 ```
 
 ### Production 환경
 #### Source Build
 ```
-yarn build
+npm run build
 ```
 
 #### Server 시작 (구현 예정)
 ```
-yarn start
+npm run start
 ```
 
 ### Test 수행
 ```
-yarn test
+npm run test
 ```
 
 #### End-to-End test 수행
 ```
-yarn run test:e2e
+npm run test:e2e
 ```
 
 ### 단위 test 수행
 ```
-yarn run test:unit
+npm run test:unit
 ```
 
 ### 교정
 ```
-yarn lint
+npm run lint
 ```
