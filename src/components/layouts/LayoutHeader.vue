@@ -49,7 +49,7 @@
     }
 
     protected goToHome(): void {
-      return this.$router.push({name: RouteName.HOME});
+      return this.$router.push({name: RouteName.OVERVIEW});
     }
   }
 
