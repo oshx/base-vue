@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/oshx/rat.git",
   "author": "오승환 <oshxios@gmail.com>",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "scripts": {
+    "preinstall": "$npm_execpath --silent run checkyarn",
+    "checkyarn": "echo \"$npm_execpath\" | grep -q \"yarn\\.js$\" || (echo '⚠️  npm 대신 yarn을 사용하세요. Use yarn instead of npm. ⚠️ ' && echo && exit 1)"
+  }
 }
