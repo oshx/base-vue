@@ -1,0 +1,8 @@
+{
+  "name": "rat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oshx/rat.git",
+  "author": "오승환 <oshxios@gmail.com>",
+  "license": "UNLICENSED"
+}
